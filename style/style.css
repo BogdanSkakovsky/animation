@@ -1,0 +1,14 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #000;
+	overflow-x: hidden;
+	font-family: HelveticaNeue; 
+}
+.container{
+	max-width: 1024px;
+	margin: 0 auto;
+	position: relative;
+}

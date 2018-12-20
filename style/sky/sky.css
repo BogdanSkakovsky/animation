@@ -1,0 +1,26 @@
+.sky{
+	background: #000;
+	height: 300px;
+	position: relative;
+}
+.sky p{
+	font-size: 25px;
+	color: #95ca00;
+	top: 30%;
+	position: absolute;
+}
+.NorthernLights{
+	background: url(../../img/sky2.png)no-repeat;
+	height: 300px;
+	width: 100%;
+}
+.NorthernLights-bg{
+  position: absolute;
+  background: #0c6396;
+  height: 100%;
+  width: 67%;
+  top: 99%;
+  left: 18%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 257px rgb(12, 93, 144);
+}

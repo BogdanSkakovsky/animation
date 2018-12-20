@@ -1,0 +1,64 @@
+.start-animation .bomb-first,
+.start-animation .bomb-second,
+.start-animation .bomb-third,
+.start-animation .bomb-fourth{
+	background: url(../../img/bomb.png)no-repeat;
+	height: 200px;
+	width: 200px;
+	transform: rotate(-55deg);
+	position: absolute;
+	top: 0;
+	left: 30%;
+	animation: bomb-first 5s  forwards;
+	z-index: 11;
+}
+.start-animation .bomb{
+	background: red;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+@keyframes bomb-first{
+	0%{
+		transform: translate(0)	rotate(-55deg) scale(0.5);
+	}
+	100%{
+		transform: translate(100px,-250px) rotate(-25deg) scale(0);
+	}
+}
+.start-animation .bomb-second{
+	animation:bomb-second 5s  forwards;
+	left: 40%;
+}
+@keyframes bomb-second{
+	0%{
+		transform: translate(0)	rotate(-55deg) scale(0.5);
+	}
+	100%{
+		transform: translate(0px,-250px) rotate(-55deg) scale(0);
+	}
+}
+.start-animation .bomb-third{
+	animation: bomb-third 5s  forwards;
+	left: 50%;
+}
+@keyframes bomb-third{
+	0%{
+		transform: translate(0)	rotate(-55deg ) scale(0.5);
+	}
+	100%{
+		transform: translate(-100px,-250px) rotate(-75deg) scale(0) ;
+	}
+}
+.start-animation .bomb-fourth{
+	animation:bomb-fourth 5s forwards;
+	left: 60%;
+}
+@keyframes bomb-fourth{
+	0%{
+		transform: translate(0)	rotate(-55deg) scale(0.5);
+	}
+	100%{
+		transform: translate(-200px,-250px) rotate(-85deg) scale(0);
+	}
+}

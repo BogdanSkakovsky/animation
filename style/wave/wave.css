@@ -1,0 +1,39 @@
+.wave{
+
+background: linear-gradient(to top, #062647, #0b5688);
+position: relative;
+height: 500px;
+}
+.wave-wrapper{
+	width: 100%;
+	position: absolute;
+	padding: 50px 0 0 0;
+	top: -40%;
+}
+.wave-one{
+	background: url(../../img/wave222.png)repeat-x;
+	width: 3200px;
+	height: 200px;
+	position: absolute;
+	top: 20%;
+	animation: waves 15s infinite linear;
+}
+.wave-two{
+	background: url(../../img/wave222.png)repeat-x;
+	width: 3200px;
+	height: 108px;
+	position: relative;
+	top: 0;
+	z-index: 10;
+	opacity: 0.6;
+	animation: waves 5s infinite linear;
+}
+
+@keyframes waves{
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(-1084px);
+	}
+}

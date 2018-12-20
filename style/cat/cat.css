@@ -1,0 +1,49 @@
+.cat{
+	background: url(../../img/cat.png)no-repeat;
+	background-position: center;
+	height: 200px;
+	position: relative;
+	position: absolute;
+	width: 200px;
+	animation: cat 5s infinite linear;
+	top: 0%;
+	left: 8%;
+	z-index: 99;
+}
+.cat:before{
+	content: url(../../img/tail.png);
+	height: 45px;
+	position: absolute;
+	top: 115px;
+	left: 114px;
+	animation: cat-tail 1.5s infinite alternate linear;
+	transform-origin: 0 0;
+}
+@keyframes cat-tail{
+	0%{
+		transform:translate(0) rotate(4deg);
+	}
+	50%{
+		transform: translate(2px) rotate(-4deg);
+	}
+	100%{
+		transform: translate(0) rotate(4deg);
+	}
+}
+@keyframes cat{
+	0% {
+    transform: translate(0, 0);    
+  }
+  25%{
+	transform: translate(5px, 0px);
+  }
+  50%{
+	transform: translate(0px, 5px);
+  }
+  75%{
+  	transform: translate(-5px, 0px);
+  }
+  100%{
+  	transform: translate(0px, 0px);
+  }
+}

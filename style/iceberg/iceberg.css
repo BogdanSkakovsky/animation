@@ -1,0 +1,68 @@
+.iceberg{
+	display: flex;
+	justify-content: center;
+	background-position: center;
+	height: 130px;
+	width: 100%;
+	animation: iceberg 2s infinite linear;
+	position: absolute;
+	top: 5%;
+	z-index: 9;
+}
+.top-iceberg{
+	position: absolute;
+	background: url(../../img/top-iceberg.png)no-repeat;
+	height: 110px;
+	width: 105px;
+	z-index: 10;
+}
+.start-animation .top-iceberg{
+	position: absolute;
+	background: url(../../img/top-iceberg.png)no-repeat;
+	height: 110px;
+	width: 105px;
+	animation: top-iceberg 5s forwards;
+	animation-delay: 3s;
+}
+@keyframes top-iceberg{
+	0%{
+	}
+	100%{
+		transform: translate(-290px,-20px);
+	}
+}
+.bottom-iceberg{
+	background: url(../../img/bottom-iceberg.png)no-repeat;
+	height: 110px;
+	width: 105px;
+	position: absolute;
+	right: 46%;
+	top: 40%;
+}
+.start-animation .bottom-iceberg{
+	background: url(../../img/bottom-iceberg.png)no-repeat;
+	height: 110px;
+	width: 105px;
+	position: absolute;
+	right: 46%;
+	top: 40%;
+	animation: bottom-iceberg 5s forwards;
+		animation-delay: 3s;
+}
+@keyframes bottom-iceberg{
+	0%{}
+	100%{
+		transform: translate(290px,-20px);
+	}
+}
+@keyframes iceberg{
+	0% {
+    transform: translate(0,-10px);    
+  }
+  50%{
+		transform: translate(0,10px);
+  }
+  100% {
+    transform: translate(0,-10px);
+  }
+}
